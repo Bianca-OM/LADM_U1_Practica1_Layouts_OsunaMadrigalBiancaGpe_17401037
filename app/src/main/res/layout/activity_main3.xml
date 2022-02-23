@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EC8F"
+    android:padding="20dp"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgcomida"
+        android:src="@drawable/comida"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtnombre"
+        android:hint="Nombre"
+        android:layout_below="@+id/imgcomida"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/txttelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnombre"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:hint="Telefono"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txtdireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttelefono"
+        android:layout_marginTop="20dp"
+        android:hint="Direccion"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblplatillo"
+        android:text="Platillo:"
+        android:layout_below="@+id/txtdireccion"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnrplatillo"
+        android:entries="@array/Itemmenu"
+        android:layout_below="@+id/lblplatillo"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnordenar"
+        android:text="ORDENAR"
+        android:textSize="20dp"
+        android:layout_below="@+id/spnrplatillo"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#4CAF50"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnregresar"
+        android:text="REGRESAR"
+        android:textSize="20dp"
+        android:layout_below="@+id/spnrplatillo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#4CAF50"/>
+
+</RelativeLayout>
